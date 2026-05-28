@@ -511,7 +511,7 @@
     @keyframes fadeIn { from{opacity:0} to{opacity:1} }
 
     /* ── Responsive ── */
-    @media(max-width:900px){
+    /* @media(max-width:900px){
       nav { padding: 1.2rem 2rem; }
       #hero, #about, #contact { grid-template-columns: 1fr; padding: 6rem 2rem; gap: 3rem; }
       #hero { padding-top: 8rem; }
@@ -524,7 +524,7 @@
       .skills-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .nav-links { gap: 0.9rem; }
-    }
+    } */
     /* @media(max-width:390px)
     {
       .nav-links{
@@ -532,3 +532,119 @@
         gap: 1.5rem;
       }
     } */
+     /* ════════════════════════════
+   RESPONSIVE — TABLET (max 900px)
+════════════════════════════ */
+@media (max-width: 900px) {
+
+  /* Nav */
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { gap: 1.2rem; }
+  .nav-links a { font-size: .6rem; }
+
+  /* Hero */
+  #hero {
+    grid-template-columns: 1fr;
+    padding: 7rem 1.5rem 4rem;
+    gap: 2rem;
+    min-height: auto;
+  }
+  .hero-right { display: none; }
+  h1 { font-size: clamp(3rem, 12vw, 5rem); margin-bottom: 1rem; }
+  .hero-desc { font-size: .9rem; max-width: 100%; }
+  .hero-cta { flex-direction: column; gap: .8rem; }
+  .btn { justify-content: center; padding: .9rem 1.5rem; }
+
+  /* About */
+  #about {
+    grid-template-columns: 1fr;
+    padding: 5rem 1.5rem;
+    gap: 2.5rem;
+  }
+  h2 { font-size: clamp(2rem, 8vw, 3.5rem); }
+
+  /* Skills */
+  #skills { padding: 5rem 1.5rem; }
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .skills-header { margin-bottom: 3rem; }
+
+  /* Contact */
+  #contact {
+    grid-template-columns: 1fr;
+    padding: 5rem 1.5rem;
+    gap: 3rem;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
+
+/* ════════════════════════════
+   RESPONSIVE — MOBILE (max 600px)
+════════════════════════════ */
+@media (max-width: 600px) {
+
+  /* Nav */
+  nav { padding: 1rem 1.2rem; }
+  .nav-links {
+    gap: .8rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .nav-links a { font-size: .55rem; letter-spacing: .1em; }
+
+  /* Hero */
+  #hero { padding: 6rem 1.2rem 3rem; }
+  h1 { font-size: clamp(2.8rem, 14vw, 4rem); line-height: 1; }
+  .hero-tag { font-size: .6rem; margin-bottom: 1.2rem; }
+  .hero-desc { font-size: .85rem; line-height: 1.7; }
+  .btn { font-size: .65rem; padding: .8rem 1.2rem; width: 100%; }
+
+  /* About */
+  #about { padding: 4rem 1.2rem; gap: 2rem; }
+  .about-card { padding: 1.2rem 1rem; gap: .8rem; }
+  .card-body { font-size: .8rem; }
+  .about-pills { gap: .4rem; }
+  .pill { font-size: .55rem; padding: .35rem .7rem; }
+
+  /* Skills */
+  #skills { padding: 4rem 1.2rem; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .skill-item { padding: 1.5rem 1.2rem; }
+  .skill-name { font-size: 1.1rem; }
+  .tools-section { margin-top: 3rem; }
+  .tools-row { gap: .6rem; }
+  .tool-chip { font-size: .6rem; padding: .5rem 1rem; }
+
+  /* Contact */
+  #contact { padding: 4rem 1.2rem; gap: 2rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .field input,
+  .field textarea,
+  .field select {
+    font-size: .85rem;
+    padding: .7rem .9rem;
+    cursor: auto;
+  }
+  .submit-btn {
+    font-size: .65rem;
+    padding: .9rem 1rem;
+    cursor: auto;
+    width: 100%;
+  }
+  .contact-sub { font-size: .85rem; margin-bottom: 2rem; }
+
+  /* Footer */
+  footer { padding: 1.5rem 1.2rem; gap: .8rem; }
+  .footer-social { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+  .footer-copy { font-size: .55rem; }
+
+  /* Disable custom cursor on touch devices */
+  body { cursor: auto; }
+  #cursor, #cursor-ring { display: none; }
+}
