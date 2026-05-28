@@ -234,7 +234,7 @@
       <div class="form-row">
         <div class="field">
           <label>First Name</label>
-          <input type="text" name="firstName" placeholder="Enter your first name" />
+          <input type="text" name="firstName" placeholder="Enter your first name" required />
         </div>
         <div class="field">
           <label>Last Name</label>
@@ -243,11 +243,11 @@
       </div>
       <div class="field">
         <label>Email</label>
-        <input type="email" name="email" placeholder="Enter your gmail.com" />
+        <input type="email" name="email" placeholder="Enter your gmail.com" required/>
       </div>
       <div class="field">
         <label>Project Type</label>
-        <select name="projectType">
+        <select name="projectType" required>
           <option value="">— Select a category —</option>
           <option>Brand Identity</option>
           <option>UI / UX Design</option>
@@ -259,7 +259,7 @@
       </div>
       <div class="field">
         <label>Message</label>
-        <textarea name="message" placeholder="Tell me about your project..."></textarea>
+        <textarea name="message" placeholder="Tell me about your project..." required></textarea>
       </div>
       <button class="submit-btn" onclick="handleSubmit()">
         <span>Send Message →</span>
