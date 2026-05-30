@@ -13,14 +13,15 @@
 --accent2: #7b2fff; */
 /* --accent: #00ff88;
 --accent2: #ff6b35; */
---accent: #ff6b9d;
---accent2: #ff55d4;
-/* --accent: #ffffff;
---accent2: #ff4757 */
-/* --accent: #bf5af2;
---accent2: #ff375f; */
-/* --accent: #c8ff00;
---accent2: #ff3cac; */
+/* --accent: #ff6b9d;
+/* --accent2: #ff55d4; */
+--accent: #c77dff;
+--accent2: #48cae4; 
+/* --accent: #00fff5;
+--accent2: #ff006e; */
+/* --accent: #06d6a0;
+--accent2: #ff6b6b; */
+
 
       --text: #e8e8e8;
       /* --muted: #555; */
@@ -52,7 +53,7 @@
     }
     #cursor-ring {
       position: fixed; width: 36px; height: 36px;
-      border: 1px solid rgba(166, 94, 164, 0.877); border-radius: 50%;
+      border: 1px solid rgba(179, 231, 250, 0.877); border-radius: 50%;
       pointer-events: none; z-index: 9998;
       transform: translate(-50%, -50%);
       transition: transform .12s ease-out, width .25s, height .25s, border-color .25s;
